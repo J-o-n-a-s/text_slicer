@@ -1,3 +1,9 @@
+from sys import setrecursionlimit
+
+
+setrecursionlimit(10**6)
+
+
 class BreakTextIntoLines:
     def __init__(
         self,
@@ -51,7 +57,6 @@ class BreakTextIntoLines:
 
 
 text = '01-02-03-PIN05-06-07-PIN09-10-11-PIN13-14-15-PIN17-18-19-PIN21-22-23-PIN25-26-27-PIN29-30-31-PIN33-34-35-PIN37-38-30-PIN'
-
 
 result = BreakTextIntoLines(
     p_text=text,
