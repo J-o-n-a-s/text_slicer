@@ -56,13 +56,12 @@ class BreakTextIntoLines:
         return _result
 
 
-text = '01-02-03-PIN05-06-07-PIN09-10-11-PIN13-14-15-PIN17-18-19-PIN21-22-23-PIN25-26-27-PIN29-30-31-PIN33-34-35-PIN37-38-30-PIN'
-
 result = BreakTextIntoLines(
-    p_text=text,
-    p_characters=12,
-    p_starting_character=' > ',
-    p_terminating_character='',
+    p_text=input('\nDigite o texto\n> '),
+    p_characters=int(input('\nDigite o número de caracteres\n> ')),
+    p_starting_character=input('\nDigite o prefixo\n> '),
+    p_terminating_character=input('\nDigite o sufixo\n> '),
 )
 
-print(result.exec())
+print('\n\n', result.exec())
+input('\n\nPressione <enter> para finalizar...')
